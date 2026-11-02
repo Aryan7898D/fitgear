@@ -2,7 +2,7 @@
 const API='../backend/', IMG='images/', STEPS=['Placed','Packed','Shipped','Delivered'];
 const st={user:null,cat:'All',q:'',sort:'',cart:{items:[],total:0}};
 const $=s=>document.querySelector(s), inr=n=>'₹'+Number(n).toLocaleString('en-IN');
-let demoMode=location.protocol==='file:'||location.hostname.endsWith('.github.io');
+let demoMode=location.protocol==='file:'||location.hostname.endsWith('.github.io')||location.hostname.endsWith('.vercel.app');
 async function api(f,body){
   if(demoMode)return useDemo(f,body);
   try{

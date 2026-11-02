@@ -26,6 +26,9 @@ In the repository, open **Settings → Pages**, choose **GitHub Actions** as the
 
 After that one-time setup, the GitHub Actions workflow deploys the static frontend from `frontend/` when changes are pushed to `main`. The demo site is served at `https://aryan7898d.github.io/fitgear/` after the Pages deployment completes. GitHub Pages does not run PHP or MySQL, so this hosted version uses browser-local demo data; use the XAMPP setup below for the full backend.
 
+## Deploy the demo to Vercel
+Import `Aryan7898D/fitgear` into Vercel and deploy with the project root set to the repository root. `vercel.json` publishes the `frontend/` directory as a static site. The Vercel-hosted demo stores accounts, cart, and orders in each visitor's browser; it does not run the PHP/MySQL backend or process real payments. Vercel must be authorized with your account to create the live deployment.
+
 ## How to run with the PHP/MySQL backend (XAMPP)
 1. Copy the `FitGear` folder into `C:\xampp\htdocs\`.
 2. Start **Apache** and **MySQL** in the XAMPP Control Panel.
