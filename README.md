@@ -22,7 +22,9 @@ FitGear/
 Open `frontend/index.html` directly in a browser. The app automatically uses a local demo API when PHP/MySQL is unavailable. Products, accounts, cart, orders, and admin changes are saved only in that browser's local storage; this is for demonstration and is not secure for real customer data or payments. Demo admin: `admin@fitgear.com` / `admin123`.
 
 ## GitHub Pages demo
-The GitHub Actions workflow deploys the static frontend from `frontend/` when changes are pushed to `main`. The demo site is served at `https://aryan7898d.github.io/fitgear/` after the Pages deployment completes. GitHub Pages does not run PHP or MySQL, so this hosted version uses browser-local demo data; use the XAMPP setup below for the full backend.
+In the repository, open **Settings → Pages**, choose **GitHub Actions** as the build and deployment source, and save. GitHub does not allow the workflow token to enable Pages on the repository automatically.
+
+After that one-time setup, the GitHub Actions workflow deploys the static frontend from `frontend/` when changes are pushed to `main`. The demo site is served at `https://aryan7898d.github.io/fitgear/` after the Pages deployment completes. GitHub Pages does not run PHP or MySQL, so this hosted version uses browser-local demo data; use the XAMPP setup below for the full backend.
 
 ## How to run with the PHP/MySQL backend (XAMPP)
 1. Copy the `FitGear` folder into `C:\xampp\htdocs\`.
