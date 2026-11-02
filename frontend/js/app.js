@@ -14,7 +14,6 @@ async function api(f,body){
 }
 function useDemo(f,body){
   demoMode=true;
-  $('#modeNotice').hidden=false;
   return window.demoApi(f,body);
 }
 function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display='none',2500)}
